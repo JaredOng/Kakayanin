@@ -1,12 +1,13 @@
 *{
   padding: 0px;
   margin: 0px;
+  font-family: 'Inter', sans-serif;
 }
 
 .header{
   /* width: 360px; */
   background-color: white;
-  height: 92px;
+  height: 80px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
 }
@@ -16,13 +17,14 @@
   padding: 0px 20px;
   box-sizing: border-box;
   margin: auto;
+  position: absolute;
+  top: 30px;
 }
 
 .logo{
-  width: 85%;
   padding: 0px 20px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 15px auto;
 }
 
 .modal{
@@ -34,6 +36,7 @@
   visibility: hidden;
   transform: translate(-100%);
   transition: transform 0.3s ease-out;
+  z-index: 100;
 }
 
 .modal_background{
@@ -45,8 +48,76 @@
   top: 0;
   visibility: hidden;
   transition: opacity 0.3s linear;
+  z-index: 100;
 }
 
 body{
   overflow: hidden;
+  background: #86E5FF;
+}
+
+/* End of modal */
+
+.search{
+  position: relative;
+  bottom: 15px;
+  width: 80%;
+  height: 38px;
+  background-color: white;
+  margin: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.searchicon{
+  padding: 0px 5px;
+}
+
+.services{
+  width: 90%;
+  height: 220px;
+  /* background-color: yellow; */
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-column-gap: 40px;
+  padding-bottom: 20px;
+}
+
+.imgcircle{
+  border-radius: 75%;
+  background-color: white;
+  width: 67px;
+  height: 67px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.location_and_services{
+  background: url("../Images/BG1.png");
+  width: 100%;
+  height: 500px;
+}
+
+.location{
+  margin: auto;
+  width: 85%;
+  font-weight: bold;
+}
+
+.location p{
+  padding-left: 10px;
+}
+
+.location_box{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 100%;
+  height: 75px;
 }
