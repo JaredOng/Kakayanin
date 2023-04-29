@@ -71,78 +71,32 @@ body{
 
 /* End of modal */
 
-.first_page{
-  background: #86E5FF;
-
-}
-
-.search{
-  position: relative;
-  bottom: 15px;
-  width: 80%;
-  height: 38px;
-  background-color: white;
+.Bookingtitlediv{
+  width: 100%;
   margin: auto;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border: 1px solid #000000;
-  border-radius: 6px;
-  padding: 8px;
-  box-sizing: border-box;
-  align-items: center;
   display: flex;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.searchicon{
-  padding: 0px 5px;
-}
-
-.searchinput{
-  border-width: 0px !important;
-  height: 20px;
+.Bookingtitle{
+  margin: auto;
   width: 100%;
 }
 
-.services{
-  width: 90%;
-  height: 210px;
-  padding-top: 20px;
-  /* background-color: yellow; */
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  align-items: flex-start;
-  grid-column-gap: 40px;
-  padding-bottom: 20px;
-}
-
-.imgcircle{
-  border-radius: 75%;
-  background-color: white;
-  width: 67px;
-  height: 67px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.favorites_and_services{
-  background: url("../Images/BG1.png");
-  width: 100%;
-  height: 500px;
-}
-
-.favorites{
-  margin: auto;
+.Baseprice{
+  margin: 0px auto 20px;
+  position: relative;
   width: 85%;
   font-weight: bold;
 }
 
-.favorites p{
+.Baseprice p{
   padding-left: 10px;
+  font-size: 20px;
 }
 
-.favorites_box{
+.NowOrLater{
   background: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
@@ -150,35 +104,102 @@ body{
   border-radius: 10px;
   width: 100%;
   height: 75px;
-    overflow: scroll;
-  padding: 0px 10px;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
 }
 
-.past_services{
-  margin: 20px auto 0px;
+.Box1, .Box2{
+  background-color: #E9E8E8;
+  width: 50%;
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: 75px;
+}
+
+.Description{
+  margin: 0px auto 15px;
+  position: relative;
   width: 85%;
   font-weight: bold;
 }
 
-.past_services p{
+.Description p{
   padding-left: 10px;
 }
 
-.past_services_box{
+.Description textarea{
   background: #86E5FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: 0px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.BG2div{
+  width: 100%;
+  background-image: url("../Images/BG2.png");
+  padding-bottom: 30px;
+  background-position: top;
+  background-color: #86E5FF;
+  background-repeat: no-repeat;
+}
+
+.Upload{
+  margin: 0px auto 30px;
+  position: relative;
+  width: 85%;
+  font-weight: bold;
+}
+
+.Upload p{
+  padding-left: 10px;
+}
+
+.Uploadfiles{
+  background: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   width: 100%;
-  height: 300px;
-  padding: 15px 0px 5px;
+  height: 75px;
+  overflow: hidden;
+  display: flex;
   box-sizing: border-box;
-  overflow: scroll;
+  align-items: center;
 }
 
-.past_services_box img{
-  width: 95%;
-  position: relative;
-  left: 2.5%;
+.ImagesHere{
+  background-color: #E9E8E8;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  margin: 20px 0px;
+  overflow: hidden;
+  height: 160px;
+}
+
+.Locationdiv{
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.Location{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #0081C9;
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font: 'Inter';
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto;
 }

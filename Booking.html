@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QuikFix | Booking</title>
+    <link rel="stylesheet" href="CSS/Booking.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <script type="text/javascript">
+    function BoxSelect(index, index2) {
+      document.getElementsByClassName('Box'+index)[0].style.backgroundColor = "#86E5FF";
+      document.getElementsByClassName('Box'+index2)[0].style.backgroundColor = "white";
+    }
+  </script>
+  <body>
+    <!-- start of header 1.0 -->
+    <div class="header">
+      <div class="hamburg">
+        <img src="Images/Hamburg icon.png" alt="" onclick="main_modal()">
+      </div>
+      <div class="logo">
+        <img src="Images/quikfix.png" alt="">
+      </div>
+      <div class="account">
+        <img src="Images/account.png" alt="">
+      </div>
+    </div>
+    <div class="modal_background" onclick="remove_main_modal()">
+    </div>
+    <div class="modal">
+    </div>
+    <!-- end of header -->
+    <div class="Bookingtitlediv">
+      <img class="Bookingtitle" src="Images/BookingTitle.png" alt="">
+    </div>
+    <div class="Baseprice">
+      <p>Base Price: $20</p>
+      <div class="NowOrLater">
+        <div class="Box1" onclick="BoxSelect(1, 2)">For now</div>
+        <div class="Box2" onclick="BoxSelect(2, 1)">For later</div>
+      </div>
+    </div>
+    <div class="Description">
+      <p>Add Description</p>
+      <textarea name="name" placeholder="Enter Description Here" rows="8" cols="80"></textarea>
+    </div>
+    <div class="BG2div">
+      <div class="Upload">
+        <p>Add pictures</p>
+        <div class="Uploadfiles">
+          <div class="Box1">Upload files</div>
+          <input type="file" id="myfile" name="myfile">
+        </div>
+        <div class="ImagesHere">
+          <img src="Images/carbattery.jpg" alt="" width="150px" height="154px">
+        </div>
+      </div>
+      <div class="Locationdiv">
+        <a class="Location" href="Location.html">Book Now</a>
+      </div>
+
+    </div>
+
+  </body>
+</html>
