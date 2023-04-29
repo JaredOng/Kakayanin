@@ -14,9 +14,22 @@
       document.getElementsByClassName('Box'+index)[0].style.backgroundColor = "#86E5FF";
       document.getElementsByClassName('Box'+index2)[0].style.backgroundColor = "white";
     }
-  </script>
+    function main_modal(){
+      document.getElementsByClassName('modal')[0].style.visibility = "visible";
+      document.getElementsByClassName('modal')[0].style.transform = "translate(0%)";
+      document.getElementsByClassName('modal_background')[0].style.visibility = "visible";
+      document.getElementsByClassName('modal_background')[0].style.opacity = "0.8";
+    }
+    function remove_main_modal(){
+      document.getElementsByClassName('modal')[0].style.visibility = "hidden";
+      document.getElementsByClassName('modal')[0].style.transform = "translate(-100%)";
+      document.getElementsByClassName('modal_background')[0].style.visibility = "hidden";
+      document.getElementsByClassName('modal_background')[0].style.opacity = "0";
+    }
+    </script>
+  </head>
   <body>
-    <!-- start of header 1.0 -->
+    <!-- start of header 2.0 -->
     <div class="header">
       <div class="hamburg">
         <img src="Images/Hamburg icon.png" alt="" onclick="main_modal()">
@@ -31,6 +44,11 @@
     <div class="modal_background" onclick="remove_main_modal()">
     </div>
     <div class="modal">
+      <a href="#" class="navitem">Home</a>
+      <a href="#" class="navitem">About Us</a>
+      <a href="#" class="navitem">Contact Us</a>
+      <a href="#" class="navitem">Find Talent</a>
+      <a href="#" class="navitem">Find Work</a>
     </div>
     <!-- end of header -->
     <div class="Bookingtitlediv">

@@ -85,49 +85,11 @@ body{
 
 /* End of modal */
 
-.BG{
-  height: 788px;
+.BGSearching{
+  background-image: url("../Images/Searching.png");
   width: 100%;
-  background-image: url("../Images/BG3.png");
-  background-position: bottom;
+  height: 710px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  box-sizing: border-box;
-  padding-top: 50px;
-}
-
-.Acceptimg{
-  width: 100%;
-  height: 270px;
-  background-image: url("../Images/AcceptOrDeny.png")
-}
-
-.buttons{
-  width: 100%;
-  display: flex;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-.button{
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #0081C9;
-  border-radius: 15px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font: 'Inter';
-  padding: 15px 15px;
-  font-weight: bold;
-  font-size: 15px;
-  margin: auto;
-}
-
-.Accept{
-  background-color: #5BC0F8;
-  color: black;
-}
-
-.Deny{
-  background-color: #FF5454;
+  background-size: cover;
 }

@@ -2,13 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>QuikFix | Booking</title>
-    <link rel="stylesheet" href="CSS/AcceptOrDeny.css">
+    <title>QuikFix | Searching</title>
+    <link rel="stylesheet" href="CSS/Searching.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script type="text/javascript">
+      window.onload = function(){
+        setTimeout(function () {
+          window.location.assign("/AcceptOrDeny.html");
+        }, 2000);
+      };
       function main_modal(){
         document.getElementsByClassName('modal')[0].style.visibility = "visible";
         document.getElementsByClassName('modal')[0].style.transform = "translate(0%)";
@@ -46,18 +51,8 @@
       <a href="#" class="navitem">Find Work</a>
     </div>
     <!-- end of header -->
-    <div class="BG">
-      <div class="Acceptimg">
+    <div class="BGSearching">
 
-      </div>
-      <div class="buttons">
-        <a class="button Accept" href="Payment.html">
-          Proceed with service
-        </a>
-        <a class="button Deny" href="Concerns.html">
-          Reject Offer
-        </a>
-      </div>
     </div>
 
   </body>
