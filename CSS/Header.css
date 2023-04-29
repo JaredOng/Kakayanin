@@ -53,10 +53,14 @@
 
 body{
   overflow: hidden;
-  background: #86E5FF;
 }
 
 /* End of modal */
+
+.first_page{
+  background: #86E5FF;
+
+}
 
 .search{
   position: relative;
