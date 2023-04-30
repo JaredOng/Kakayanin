@@ -2,18 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>QuikFix | Searching</title>
-    <link rel="stylesheet" href="CSS/Searching.css">
+    <title>QuikFix | Rating</title>
+    <link rel="stylesheet" href="CSS/Rating.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script type="text/javascript">
-      window.onload = function(){
-        setTimeout(function () {
-          window.location.href = "AcceptOrDeny.html"
-        }, 3000);
-      };
       function main_modal(){
         document.getElementsByClassName('modal')[0].style.visibility = "visible";
         document.getElementsByClassName('modal')[0].style.transform = "translate(0%)";
@@ -25,6 +20,15 @@
         document.getElementsByClassName('modal')[0].style.transform = "translate(-100%)";
         document.getElementsByClassName('modal_background')[0].style.visibility = "hidden";
         document.getElementsByClassName('modal_background')[0].style.opacity = "0";
+      }
+      function Favorites(){
+        if (document.getElementsByClassName('button1')[0].innerHTML == "Saved to favorites") {
+          document.getElementsByClassName('button1')[0].innerHTML = "Save to favorites"
+        }
+        else {
+          document.getElementsByClassName('button1')[0].innerHTML = "Saved to favorites"
+        }
+
       }
     </script>
   </head>
@@ -51,8 +55,12 @@
       <a href="#" class="navitem">Find Work</a>
     </div>
     <!-- end of header -->
-    <div class="BGSearching">
-
+    <div class="BG">
+      <img class="RatingIMG" src="Images/Rating.png" alt="">
+      <input placeholder="Describe your experience" class="RatingInput" type="text" name="" value="">
+      <div class="line"></div>
+      <div class="button button1" onclick="Favorites()">Save to favorites</div>
+      <a class="button" href="Find Talent.html">Submit</a>
     </div>
 
   </body>
