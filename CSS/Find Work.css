@@ -144,9 +144,8 @@ body{
 }
 
 .bottombuttons{
-  position: absolute;
-  top: 750px;
-  left: 0px;
+  /* position: absolute; */
+  /* left: 0px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -164,4 +163,11 @@ body{
   text-align: center;
   height: 50px;
   line-height: 50px;
+}
+
+.bottom1{
+  /* height: 50px; */
+  background-color: white;
+  /* font-weight: normal; */
+  margin-top: 100px !important;
 }
