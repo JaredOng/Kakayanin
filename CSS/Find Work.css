@@ -145,7 +145,7 @@ body{
 
 .bottombuttons{
   position: absolute;
-  bottom: 40px;
+  top: 750px;
   left: 0px;
   width: 100%;
   display: flex;
