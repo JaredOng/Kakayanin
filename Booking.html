@@ -13,6 +13,13 @@
     function BoxSelect(index, index2) {
       document.getElementsByClassName('Box'+index)[0].style.backgroundColor = "#86E5FF";
       document.getElementsByClassName('Box'+index2)[0].style.backgroundColor = "white";
+      if (index==1) {
+        document.getElementsByClassName("Location")[0].href = "Location.html";
+      }
+      else{
+        document.getElementsByClassName("Location")[0].href = "Location2.html";
+
+      }
     }
     function main_modal(){
       document.getElementsByClassName('modal')[0].style.visibility = "visible";

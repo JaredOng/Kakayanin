@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QuikFix | Location</title>
+    <link rel="stylesheet" href="CSS/Location.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      function main_modal(){
+        document.getElementsByClassName('modal')[0].style.visibility = "visible";
+        document.getElementsByClassName('modal')[0].style.transform = "translate(0%)";
+        document.getElementsByClassName('modal_background')[0].style.visibility = "visible";
+        document.getElementsByClassName('modal_background')[0].style.opacity = "0.8";
+      }
+      function remove_main_modal(){
+        document.getElementsByClassName('modal')[0].style.visibility = "hidden";
+        document.getElementsByClassName('modal')[0].style.transform = "translate(-100%)";
+        document.getElementsByClassName('modal_background')[0].style.visibility = "hidden";
+        document.getElementsByClassName('modal_background')[0].style.opacity = "0";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- start of header 2.0 -->
+    <div class="header">
+      <div class="hamburg">
+        <img src="Images/Hamburg icon.png" alt="" onclick="main_modal()">
+      </div>
+      <div class="logo">
+        <img src="Images/quikfix.png" alt="">
+      </div>
+      <div class="account">
+        <img src="Images/account.png" alt="">
+      </div>
+    </div>
+    <div class="modal_background" onclick="remove_main_modal()">
+    </div>
+    <div class="modal">
+      <a href="#" class="navitem">Home</a>
+      <a href="#" class="navitem">About Us</a>
+      <a href="#" class="navitem">Contact Us</a>
+      <a href="Find Talent.html" class="navitem">Find Talent</a>
+      <a href="Find Work.html" class="navitem">Find Work</a>
+    </div>
+    <!-- end of header -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30880.970075179408!2d121.05914099248663!3d14.649057381717508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1682809006660!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <img class="mappoint" src="Images/map point.png" alt="">
+    <div class="BGLocation">
+      <a class="button" href="List.html">Schedule Now!</a>
+    </div>
+  </body>
+</html>
